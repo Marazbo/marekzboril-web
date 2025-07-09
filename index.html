@@ -19,7 +19,7 @@
 
     header {
       background-color: #333;
-      padding: 1rem;
+      padding: 2rem 1rem;
       text-align: center;
     }
 
@@ -32,6 +32,15 @@
     header p {
       font-size: 1.2rem;
       color: #ddd;
+    }
+
+    .intro {
+      max-width: 960px;
+      margin: 2rem auto;
+      padding: 0 1rem;
+      font-size: 1.1rem;
+      color: #eee;
+      text-align: center;
     }
 
     section {
@@ -51,33 +60,38 @@
       display: flex;
       flex-wrap: wrap;
       justify-content: space-between;
+      gap: 1rem;
+    }
+
+    .bottom-services {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 1rem;
     }
 
     .service {
       flex: 0 0 32%;
       background: #222;
       padding: 1rem;
-      margin-bottom: 1rem;
       border-radius: 5px;
       text-align: left;
     }
 
+    .bottom-services .service {
+      flex: 0 0 45%;
+    }
+
     .service img {
-      max-width: 100%;
+      width: 100%;
       height: auto;
       border-radius: 3px;
+      object-fit: cover;
     }
 
     .service h3 {
       margin-top: 0.5rem;
       color: #f4f4f4;
-    }
-
-    .bottom-services {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      gap: 1rem;
     }
 
     .contact-form {
@@ -119,7 +133,7 @@
     }
 
     @media (max-width: 768px) {
-      .service {
+      .service, .bottom-services .service {
         flex: 0 0 100%;
       }
 
@@ -127,7 +141,7 @@
         font-size: 2rem;
       }
 
-      header p {
+      header p, .intro {
         font-size: 1rem;
       }
 
@@ -141,38 +155,56 @@
 
 <header>
   <h1>Marek Zbořil</h1>
-  <p>Finanční konzultant & realitní makléř</p>
+  <p>Finanční & Realitní poradenství | Manažer | Swiss Life Select</p>
 </header>
+
+<div class="intro">
+  <p>
+    Každý klient je jiný. Má své plány, potřeby a představy. Mým prvním cílem je pochopit vaši situaci.
+    Společně ji probereme a na základě toho najdu to nejlepší možné řešení, ať už jde o nastavení úvěru,
+    smysluplné investice, pojištění, které dává smysl, nebo know-how v oblasti nemovitostí.
+    Nejde mi o šablonové nabídky, ale o skutečnou pomoc na míru. Tak, aby to dávalo smysl právě vám a má práce
+    pro vás měla opravdový přínos.
+  </p>
+</div>
 
 <section>
   <h2>Služby</h2>
   <div class="services">
     <div class="service">
-      <img src="img/pojisteni.jpg" alt="Pojištění">
+      <img src="images/pojisteni.jpg" alt="Pojištění">
       <h3>Pojištění</h3>
-      <p>Pojistka má člověku pomoci, ne ho zatížit složitostmi. Společně projdeme, co má ve vašem životě smysl chránit. Vysvětlím možnosti, nastavíme smlouvy tak, aby dávaly hlavu a patu, a hlavně aby opravdu fungovaly, když bude potřeba.</p>
+      <p>Pojistka má člověku pomoci, ne ho zatížit složitostmi. Společně projdeme, co má ve vašem životě smysl chránit.
+      Vysvětlím možnosti, nastavíme smlouvy tak, aby dávaly hlavu a patu, a hlavně aby opravdu fungovaly, když bude potřeba.</p>
     </div>
     <div class="service">
-      <img src="img/uvery.jpg" alt="Úvěry">
+      <img src="images/uvery.jpg" alt="Úvěry">
       <h3>Úvěry</h3>
-      <p>Dobře nastavený úvěr začíná dlouho před podpisem smlouvy. Pomohu vám zorientovat se v možnostech, spočítat, co je udržitelné i z dlouhodobého hlediska, a naplánovat celý proces tak, aby pro vás úvěr pracoval a ne vás omezoval.</p>
+      <p>Dobře nastavený úvěr začíná dlouho před podpisem smlouvy. Pomohu vám zorientovat se v možnostech,
+      spočítat, co je udržitelné i z dlouhodobého hlediska, a naplánovat celý proces tak,
+      aby pro vás úvěr pracoval a ne vás omezoval.</p>
     </div>
     <div class="service">
-      <img src="img/investice.jpg" alt="Investice">
+      <img src="images/investice.jpg" alt="Investice">
       <h3>Investice</h3>
-      <p>Investování může být srozumitelné, klidné a promyšlené. Vysvětlím vám vše lidsky, bez složitých termínů. Společně sestavíme plán, který odpovídá vašim cílům, časovým možnostem i vztahu k riziku.</p>
+      <p>Investování může být srozumitelné, klidné a promyšlené. Vysvětlím vám vše lidsky, bez složitých termínů.
+      Společně sestavíme plán, který odpovídá vašim cílům, časovým možnostem i vztahu k riziku.</p>
     </div>
   </div>
+
   <div class="bottom-services">
     <div class="service">
-      <img src="img/realitni.jpg" alt="Realitní služby">
+      <img src="images/realitni.jpg" alt="Realitní služby">
       <h3>Realitní služby</h3>
-      <p>Kvalitní prezentace nemovitosti je základ úspěchu. Zajistím profesionální fotografie, popis i cílenou propagaci, která přivede vážné zájemce. Mým cílem je pro vás vždy vyjednat nejlepší možnou cenu a bezpečný průběh celého obchodu.</p>
+      <p>Kvalitní prezentace nemovitosti je základ úspěchu. Zajistím profesionální fotografie, popis i cílenou propagaci,
+      která přivede vážné zájemce. Mým cílem je pro vás vždy vyjednat nejlepší možnou cenu a bezpečný průběh celého obchodu.</p>
     </div>
     <div class="service">
-      <img src="img/konzultace.jpg" alt="Konzultace zdarma">
+      <img src="images/konzultace.jpg" alt="Konzultace zdarma">
       <h3>Konzultace zdarma</h3>
-      <p>Máte otázky ohledně pojistné události, nastavení stávající smlouvy, koupě nebo prodeje nemovitosti? Konzultace nabízím zdarma. Vysvětlím, doporučím a pomohu vám zorientovat se v situaci. Bez závazků, ale s maximální snahou pomoct.</p>
+      <p>Máte otázky ohledně pojistné události, nastavení stávající smlouvy, koupě nebo prodeje nemovitosti?
+      Konzultace nabízím zdarma. Vysvětlím, doporučím a pomohu vám zorientovat se v situaci. Bez závazků,
+      ale s maximální snahou pomoct.</p>
     </div>
   </div>
 </section>
