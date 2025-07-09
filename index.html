@@ -2,86 +2,96 @@
 <html lang="cs">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Marek Zbořil – Finanční a Realitní Poradenství</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Marek Zbořil | Finanční a realitní poradenství</title>
   <style>
     body {
       margin: 0;
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      background-color: #121212;
-      color: #ffffff;
-      line-height: 1.6;
+      font-family: Arial, sans-serif;
+      background-color: #111;
+      color: #fff;
     }
+
     header {
-      padding: 2rem;
+      background-color: #000;
+      padding: 40px 20px;
       text-align: center;
-      background-color: #1e1e1e;
     }
+
     header h1 {
+      font-size: 36px;
       margin: 0;
-      font-size: 2.5rem;
     }
+
     header p {
-      font-size: 1.2rem;
-      margin: 0.5rem 0;
+      font-size: 18px;
+      margin-top: 10px;
+      color: #ccc;
     }
 
-    .row {
+    header small {
+      display: block;
+      margin-top: 20px;
+      font-size: 14px;
+      color: #777;
+    }
+
+    section {
+      padding: 40px 20px;
+    }
+
+    h2 {
+      text-align: center;
+      margin-bottom: 30px;
+    }
+
+    .sluzby {
       display: flex;
-      justify-content: center;
       flex-wrap: wrap;
-      gap: 2rem;
-      margin-bottom: 2rem;
+      justify-content: center;
+      gap: 30px;
+      max-width: 1000px;
+      margin: 0 auto;
     }
 
-    .service {
-      max-width: 280px;
-      text-align: center;
-    }
-    .service img {
-      width: 100%;
+    .sluzba {
+      flex: 1 1 250px;
+      max-width: 300px;
+      background-color: #222;
+      padding: 20px;
       border-radius: 10px;
-      height: auto;
-    }
-
-    .contact {
-      padding: 2rem 1rem;
-      background-color: #1e1e1e;
       text-align: center;
     }
-    .contact form {
-      max-width: 400px;
-      margin: auto;
+
+    .sluzba img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 6px;
+      margin-bottom: 15px;
+    }
+
+    form {
       display: flex;
       flex-direction: column;
-      gap: 1rem;
+      gap: 15px;
+      max-width: 600px;
+      margin: 0 auto;
     }
-    .contact input,
-    .contact textarea {
-      padding: 0.8rem;
-      border-radius: 5px;
-      border: none;
-      font-size: 1rem;
+
+    input, textarea, button {
+      padding: 10px;
+      font-size: 16px;
     }
-    .contact button {
-      padding: 0.8rem;
-      background-color: #007aff;
+
+    button {
+      background-color: #ffb400;
       border: none;
-      border-radius: 5px;
-      color: white;
-      font-size: 1rem;
       cursor: pointer;
+      color: #000;
     }
 
-    footer {
-      text-align: center;
-      padding: 1rem;
-      background-color: #181818;
-      font-size: 0.9rem;
-    }
-
-    @media (max-width: 768px) {
-      .row {
+    @media screen and (max-width: 768px) {
+      .sluzby {
         flex-direction: column;
         align-items: center;
       }
@@ -89,61 +99,57 @@
   </style>
 </head>
 <body>
-  <header>
-    <h1>Marek Zbořil</h1>
-    <p>Finanční & Realitní poradenství | Manažer | Swiss Life Select</p>
-    <p style="margin-top: 1rem; max-width: 800px; margin-inline: auto;">
-      Každý klient je jiný. Má své plány, potřeby a představy. Mým prvním cílem je pochopit vaši situaci. Společně ji probereme a na základě toho najdu to nejlepší možné řešení – ať už jde o nastavení úvěru, smysluplné investice, pojištění, které dává smysl, nebo know-how v oblasti nemovitostí. Nejde mi o šablonové nabídky, ale o skutečnou pomoc na míru. Tak, aby to dávalo smysl právě vám a má práce pro vás měla opravdový přínos.
-    </p>
-  </header>
 
-  <section class="services">
-    <div class="row">
-      <div class="service">
-        <img src="images/pojisteni.jpg" alt="Pojištění">
-        <h3>Pojištění</h3>
-        <p>Pomohu vám nastavit pojištění, které chrání to nejdůležitější – zdraví, majetek, rodinu. Bez zbytečností, s důrazem na smysluplnost a efektivitu.</p>
-      </div>
-      <div class="service">
-        <img src="images/uver.jpg" alt="Úvěry">
-        <h3>Úvěry</h3>
-        <p>Díky plánování úvěru dopředu můžete získat výrazně lepší podmínky. Pomohu vám s hypotékou i refinancováním, krok za krokem a bez stresu.</p>
-      </div>
-      <div class="service">
-        <img src="images/investice.jpg" alt="Investice">
-        <h3>Investice</h3>
-        <p>Vysvětlím vám investování lidsky. Navrhnu strategie, které odpovídají vašim cílům a životní situaci. S důrazem na srozumitelnost a dlouhodobý výnos.</p>
-      </div>
+<header>
+  <h1>Marek Zbořil</h1>
+  <p>Finanční & Realitní poradenství | Manažer | Swiss Life Select</p>
+  <small>Každý klient je jiný. Má své plány, potřeby a představy. Mým prvním cílem je pochopit vaši situaci. 
+  Společně ji probereme a na základě toho najdu to nejlepší možné řešení – ať už jde o úvěr, investice, pojištění, 
+  nebo realitní poradenství. Nehledám šablonová řešení, ale přidanou hodnotu na míru právě vám.</small>
+</header>
+
+<section>
+  <h2>Služby</h2>
+  <div class="sluzby">
+    <div class="sluzba">
+      <img src="uver.jpg" alt="Úvěry">
+      <h3>Úvěry</h3>
+      <p>Společně nastavíme úvěr tak, aby dával dlouhodobý smysl. Plánujeme dopředu a bereme v úvahu vývoj sazeb, rodinné plány i rezervy.</p>
     </div>
-
-    <div class="row">
-      <div class="service">
-        <img src="images/konzultace.jpg" alt="Konzultace">
-        <h3>Konzultace (zdarma)</h3>
-        <p>Nabízím nezávazné konzultace k financím, pojištění, smlouvám či nemovitostem. Rád pomohu i s řešením pojistných událostí nebo právních otázek kolem majetku.</p>
-      </div>
-      <div class="service">
-        <img src="images/reality.jpg" alt="Reality">
-        <h3>Reality</h3>
-        <p>Prodám vaši nemovitost tak, abyste z ní získali maximum. Kvalitní prezentace, správná cílová skupina a profesionální přístup – od prvního kontaktu až po předání klíčů.</p>
-      </div>
+    <div class="sluzba">
+      <img src="investice.jpg" alt="Investice">
+      <h3>Investice</h3>
+      <p>Bezpečně a rozumně. Pomohu vám s výběrem investic, které dávají smysl vaší situaci – ať už jde o pravidelné investování nebo zhodnocení větší částky.</p>
     </div>
-  </section>
+    <div class="sluzba">
+      <img src="pojisteni.jpg" alt="Pojištění">
+      <h3>Pojištění</h3>
+      <p>Pojištění není jen o splnění povinnosti. Pomohu nastavit ochranu, která má smysl a funguje v praxi, když je potřeba.</p>
+    </div>
+    <div class="sluzba">
+      <img src="konzultace.jpg" alt="Konzultace">
+      <h3>Konzultace <br> <small style="color: #ffb400;">ZDARMA</small></h3>
+      <p>Nezávazně probereme vaše smlouvy, pojistné události, plánované hypotéky nebo investice. Pomohu vám zorientovat se a rozhodnout.</p>
+    </div>
+    <div class="sluzba">
+      <img src="reality.jpg" alt="Reality">
+      <h3>Reality</h3>
+      <p>Pomohu vám s prodejem nemovitosti – od kvalitní prezentace až po vyjednání maximální ceny. Vše bezpečně a profesionálně.</p>
+    </div>
+  </div>
+</section>
 
-  <section class="contact">
-    <h2>Kontakt</h2>
-    <p>📧 <a href="mailto:marek.zboril@sls.cz" style="color: #4fc3f7;">marek.zboril@sls.cz</a><br>📞 <a href="tel:+420730667124" style="color: #4fc3f7;">730 667 124</a></p>
+<section id="kontakt">
+  <h2>Kontaktujte mě</h2>
 
-    <form name="contact" method="POST" data-netlify="true">
-      <input type="text" name="name" placeholder="Vaše jméno" required>
-      <input type="email" name="email" placeholder="Váš e-mail" required>
-      <textarea name="message" rows="5" placeholder="Zpráva" required></textarea>
-      <button type="submit">Odeslat</button>
-    </form>
-  </section>
+  <form name="kontakt" method="POST" data-netlify="true">
+    <input type="hidden" name="form-name" value="kontakt">
+    <input type="text" name="jmeno" placeholder="Vaše jméno" required>
+    <input type="email" name="email" placeholder="Váš e-mail" required>
+    <textarea name="zprava" placeholder="Vaše zpráva" required rows="5"></textarea>
+    <button type="submit">Odeslat zprávu</button>
+  </form>
+</section>
 
-  <footer>
-    &copy; 2025 Marek Zbořil | Všechna práva vyhrazena
-  </footer>
 </body>
 </html>
