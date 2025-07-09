@@ -19,18 +19,28 @@
 
     header {
       background-color: #333;
-      padding: 2rem 1rem;
+      padding: 2.5rem 1rem 1rem;
       text-align: center;
     }
 
     header h1 {
-      font-size: 3rem;
+      font-size: 4rem;
       color: #fff;
       margin: 0.5rem 0;
     }
 
-    header p {
-      font-size: 1.4rem;
+    header h2 {
+      font-size: 1.8rem;
+      color: #ccc;
+      margin: 0.5rem 0 1rem;
+    }
+
+    .intro {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 1rem 1.5rem 2rem;
+      font-size: 1.1rem;
+      text-align: center;
       color: #ddd;
     }
 
@@ -116,10 +126,14 @@
       }
 
       header h1 {
-        font-size: 2rem;
+        font-size: 2.5rem;
       }
 
-      header p {
+      header h2 {
+        font-size: 1.3rem;
+      }
+
+      .intro {
         font-size: 1rem;
       }
 
@@ -133,8 +147,12 @@
 
 <header>
   <h1>Marek Zbořil</h1>
-  <p>Finanční konzultant & realitní makléř</p>
+  <h2>Finanční & Realitní poradenství | Manažer | Swiss Life Select</h2>
 </header>
+
+<div class="intro">
+  <p>Každý klient je jiný. Má své plány, potřeby a představy. Mým prvním cílem je pochopit vaši situaci. Společně ji probereme a na základě toho najdu to nejlepší možné řešení, ať už jde o nastavení úvěru, smysluplné investice, pojištění, které dává smysl, nebo know-how v oblasti nemovitostí. Nejde mi o šablonové nabídky, ale o skutečnou pomoc na míru. Tak, aby to dávalo smysl právě vám a má práce pro vás měla opravdový přínos.</p>
+</div>
 
 <section>
   <h2>Služby</h2>
@@ -157,42 +175,4 @@
     <div class="service">
       <img src="images/reality.jpg" alt="Realitní služby">
       <h3>Realitní služby</h3>
-      <p>Kvalitní prezentace nemovitosti je základ úspěchu. Zajistím profesionální fotografie, popis i cílenou propagaci, která přivede vážné zájemce. Mým cílem je pro vás vždy vyjednat nejlepší možnou cenu a bezpečný průběh celého obchodu.</p>
-    </div>
-    <div class="service">
-      <img src="images/konzultace.jpg" alt="Konzultace zdarma">
-      <h3>Konzultace zdarma</h3>
-      <p>Máte otázky ohledně pojistné události, nastavení stávající smlouvy, koupě nebo prodeje nemovitosti? Konzultace nabízím zdarma. Vysvětlím, doporučím a pomohu vám zorientovat se v situaci. Bez závazků, ale s maximální snahou pomoct.</p>
-    </div>
-  </div>
-</section>
-
-<section>
-  <h2>Kontakt</h2>
-  <form name="kontakt" method="POST" netlify netlify-honeypot="bot-field" class="contact-form">
-    <input type="hidden" name="form-name" value="kontakt" />
-    <p hidden>
-      <label>Nechejte prázdné: <input name="bot-field" /></label>
-    </p>
-    <label for="jmeno">Jméno</label>
-    <input type="text" id="jmeno" name="jmeno" required />
-
-    <label for="email">E-mail</label>
-    <input type="email" id="email" name="email" required />
-
-    <label for="telefon">Telefonní číslo</label>
-    <input type="tel" id="telefon" name="telefon" required />
-
-    <label for="zprava">Zpráva</label>
-    <textarea id="zprava" name="zprava" rows="5" required></textarea>
-
-    <button type="submit">Odeslat</button>
-  </form>
-</section>
-
-<footer>
-  <p>&copy; 2025 Marek Zbořil. Všechna práva vyhrazena.</p>
-</footer>
-
-</body>
-</html>
+      <p>Kvalitní prezentace nemovitosti je základ úspěchu. Zajistím profesionální fotografi
