@@ -25,13 +25,15 @@
       font-size: 1.2rem;
       margin: 0.5rem 0;
     }
-    .services {
+
+    .row {
       display: flex;
-      flex-wrap: wrap;
       justify-content: center;
+      flex-wrap: wrap;
       gap: 2rem;
-      padding: 2rem 1rem;
+      margin-bottom: 2rem;
     }
+
     .service {
       max-width: 280px;
       text-align: center;
@@ -41,6 +43,7 @@
       border-radius: 10px;
       height: auto;
     }
+
     .contact {
       padding: 2rem 1rem;
       background-color: #1e1e1e;
@@ -69,6 +72,7 @@
       font-size: 1rem;
       cursor: pointer;
     }
+
     footer {
       text-align: center;
       padding: 1rem;
@@ -77,7 +81,7 @@
     }
 
     @media (max-width: 768px) {
-      .services {
+      .row {
         flex-direction: column;
         align-items: center;
       }
@@ -94,30 +98,35 @@
   </header>
 
   <section class="services">
-    <div class="service">
-      <img src="images/pojisteni.jpg" alt="Pojištění">
-      <h3>Pojištění</h3>
-      <p>Pomohu vám nastavit pojištění, které chrání to nejdůležitější – zdraví, majetek, rodinu. Bez zbytečností, s důrazem na smysluplnost a efektivitu.</p>
+    <div class="row">
+      <div class="service">
+        <img src="images/pojisteni.jpg" alt="Pojištění">
+        <h3>Pojištění</h3>
+        <p>Pomohu vám nastavit pojištění, které chrání to nejdůležitější – zdraví, majetek, rodinu. Bez zbytečností, s důrazem na smysluplnost a efektivitu.</p>
+      </div>
+      <div class="service">
+        <img src="images/uver.jpg" alt="Úvěry">
+        <h3>Úvěry</h3>
+        <p>Díky plánování úvěru dopředu můžete získat výrazně lepší podmínky. Pomohu vám s hypotékou i refinancováním, krok za krokem a bez stresu.</p>
+      </div>
+      <div class="service">
+        <img src="images/investice.jpg" alt="Investice">
+        <h3>Investice</h3>
+        <p>Vysvětlím vám investování lidsky. Navrhnu strategie, které odpovídají vašim cílům a životní situaci. S důrazem na srozumitelnost a dlouhodobý výnos.</p>
+      </div>
     </div>
-    <div class="service">
-      <img src="images/uver.jpg" alt="Úvěry">
-      <h3>Úvěry</h3>
-      <p>Díky plánování úvěru dopředu můžete získat výrazně lepší podmínky. Pomohu vám s hypotékou i refinancováním, krok za krokem a bez stresu.</p>
-    </div>
-    <div class="service">
-      <img src="images/investice.jpg" alt="Investice">
-      <h3>Investice</h3>
-      <p>Vysvětlím vám investování lidsky. Navrhnu strategie, které odpovídají vašim cílům a životní situaci. S důrazem na srozumitelnost a dlouhodobý výnos.</p>
-    </div>
-    <div class="service">
-      <img src="images/konzultace.jpg" alt="Konzultace">
-      <h3>Konzultace (zdarma)</h3>
-      <p>Nabízím nezávazné konzultace k financím, pojištění, smlouvám či nemovitostem. Rád pomohu i s řešením pojistných událostí nebo právních otázek kolem majetku.</p>
-    </div>
-    <div class="service">
-      <img src="images/reality.jpg" alt="Reality">
-      <h3>Reality</h3>
-      <p>Prodám vaši nemovitost tak, abyste z ní získali maximum. Kvalitní prezentace, správná cílová skupina a profesionální přístup – od prvního kontaktu až po předání klíčů.</p>
+
+    <div class="row">
+      <div class="service">
+        <img src="images/konzultace.jpg" alt="Konzultace">
+        <h3>Konzultace (zdarma)</h3>
+        <p>Nabízím nezávazné konzultace k financím, pojištění, smlouvám či nemovitostem. Rád pomohu i s řešením pojistných událostí nebo právních otázek kolem majetku.</p>
+      </div>
+      <div class="service">
+        <img src="images/reality.jpg" alt="Reality">
+        <h3>Reality</h3>
+        <p>Prodám vaši nemovitost tak, abyste z ní získali maximum. Kvalitní prezentace, správná cílová skupina a profesionální přístup – od prvního kontaktu až po předání klíčů.</p>
+      </div>
     </div>
   </section>
 
