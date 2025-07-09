@@ -5,9 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Marek Zbořil – Finanční konzultant a realitní makléř</title>
   <style>
-    * {
-      box-sizing: border-box;
-    }
+    * { box-sizing: border-box; }
 
     body {
       margin: 0;
@@ -46,22 +44,24 @@
 
     section {
       padding: 2rem 1rem;
-      max-width: 960px;
+      max-width: 1100px;
       margin: auto;
     }
 
     h2 {
       font-size: 2rem;
-      margin-bottom: 1rem;
+      margin-bottom: 1.4rem;
       color: #fff;
       text-align: center;
     }
 
+    /* SLUŽBY */
     .services {
       display: flex;
       flex-wrap: wrap;
       gap: 1.5rem;
       justify-content: center;
+      margin-bottom: 2.5rem;
     }
 
     .service {
@@ -70,10 +70,13 @@
       padding: 1rem;
       border-radius: 10px;
       box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+      margin-bottom: 0;
+      min-width: 260px;
     }
 
     .service:nth-child(n+4) {
       width: 40%;
+      min-width: 280px;
     }
 
     .service img {
@@ -87,17 +90,142 @@
       color: #f4f4f4;
     }
 
+    /* USP sekce */
+    #benefits {
+      padding: 2em 1em 1.5em 1em;
+      text-align: center;
+    }
+    .benefit-list {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 2rem;
+      justify-content: center;
+    }
+    .benefit-item {
+      flex: 1 1 230px;
+      max-width: 280px;
+      padding: 1.2em 0.7em;
+      background: #191c22;
+      border-radius: 10px;
+      box-shadow: 0 2px 10px rgba(70,166,228,0.08);
+    }
+    .benefit-item h3 {
+      font-size: 1.17rem;
+      margin: 0.7em 0 0.3em 0;
+    }
+    .benefit-item p {
+      font-size: 1rem;
+      color: #b5e2fd;
+    }
+    .benefit-item span {
+      display: block;
+      font-size:2.3rem;
+      color:#46a6e4;
+      margin-bottom: 0.4em;
+    }
+    @media (max-width: 900px) {
+      .benefit-list { flex-direction: column; align-items: center; }
+      .benefit-item { max-width: 90vw; }
+    }
+
+    /* Nemovitosti */
+    #properties {
+      padding: 2em 1em 2em 1em;
+    }
+    .property-list {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 2rem;
+    }
+    .property-item {
+      border: 1px solid #284f63;
+      border-radius: 12px;
+      padding: 1.3em 1em;
+      background: #161b22;
+      box-shadow: 0 2px 8px rgba(70,166,228,0.08);
+      transition: transform 0.17s, box-shadow 0.17s;
+    }
+    .property-item:hover {
+      transform: translateY(-4px) scale(1.025);
+      box-shadow: 0 8px 22px rgba(70,166,228,0.14);
+    }
+    .property-item img {
+      width: 100%;
+      height: 180px;
+      object-fit: cover;
+      border-radius: 7px;
+      margin-bottom: 1em;
+    }
+    .property-item h3 {
+      margin: 0.5em 0 0.7em 0;
+    }
+    .property-item ul {
+      padding-left: 1em;
+      margin: 0 0 0.7em 0;
+      color: #aee1f9;
+      font-size: 0.98rem;
+    }
+    .detail-link {
+      display: inline-block;
+      color: #46a6e4;
+      font-weight: bold;
+      text-decoration: none;
+      margin-top: 0.5em;
+      border-bottom: 1px solid #46a6e4;
+      transition: color 0.15s, border 0.15s;
+    }
+    .detail-link:hover {
+      color: #3090c7;
+      border-bottom: 2px solid #3090c7;
+    }
+
+    /* Ocenění */
+    #awards {
+      background: #151a22;
+      padding: 2.2em 1em;
+    }
+    #awards h2 {
+      text-align: center;
+      margin-bottom: 1.2em;
+      color: #b5e2fd;
+    }
+    .awards-list {
+      list-style: none;
+      padding: 0;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 2rem;
+    }
+    .awards-list li {
+      flex: 1 1 180px;
+      max-width: 220px;
+      text-align: center;
+    }
+    .awards-list img {
+      max-height: 70px;
+      margin-bottom: 0.4em;
+      filter: drop-shadow(0 1px 3px rgba(70,166,228,0.14));
+      background: #fff;
+      border-radius: 7px;
+      padding: 6px;
+    }
+    .awards-list span {
+      display: block;
+      font-size: 0.95rem;
+      color: #f4f4f4;
+    }
+
+    /* Kontakt */
     .contact-form {
       background: #222;
       padding: 2rem;
       border-radius: 10px;
     }
-
     .contact-form label {
       display: block;
       margin: 1rem 0 0.5rem;
     }
-
     .contact-form input,
     .contact-form textarea {
       width: 100%;
@@ -107,7 +235,6 @@
       color: #fff;
       border-radius: 5px;
     }
-
     .contact-form button {
       margin-top: 1rem;
       padding: 0.7rem 1.5rem;
@@ -126,25 +253,12 @@
     }
 
     @media (max-width: 768px) {
-      .service {
-        width: 100% !important;
-      }
-
-      header h1 {
-        font-size: 2.5rem;
-      }
-
-      header h2 {
-        font-size: 1.3rem;
-      }
-
-      .intro {
-        font-size: 1rem;
-      }
-
-      h2 {
-        font-size: 1.5rem;
-      }
+      .service,
+      .service:nth-child(n+4) { width: 100%!important; min-width: unset;}
+      header h1 { font-size: 2.5rem; }
+      header h2 { font-size: 1.3rem; }
+      .intro { font-size: 1rem; }
+      h2 { font-size: 1.5rem; }
     }
   </style>
 </head>
@@ -190,6 +304,72 @@
   </div>
 </section>
 
+<section id="benefits">
+  <h2>Proč si vybrat právě mě</h2>
+  <div class="benefit-list">
+    <div class="benefit-item">
+      <span>🏆</span>
+      <h3>Letité zkušenosti</h3>
+      <p>Více než 10 let praxe v oboru finančního poradenství a realit.</p>
+    </div>
+    <div class="benefit-item">
+      <span>💼</span>
+      <h3>Komplexní služby</h3>
+      <p>Od investic, přes pojištění až po reality – vše na jednom místě.</p>
+    </div>
+    <div class="benefit-item">
+      <span>🤝</span>
+      <h3>Individuální přístup</h3>
+      <p>Řešení na míru každému klientovi s ohledem na jeho potřeby a cíle.</p>
+    </div>
+  </div>
+</section>
+
+<section id="properties">
+  <h2>Aktuální nabídka nemovitostí</h2>
+  <div class="property-list">
+    <div class="property-item">
+      <img src="images/byt1.jpg" alt="Prostorný byt 3+1 v Hradci Králové">
+      <h3>Prostorný byt 3+1 v Hradci Králové</h3>
+      <ul>
+        <li><strong>Lokalita:</strong> Hradec Králové, Háječek</li>
+        <li><strong>Velikost:</strong> 3+1, 74 m²</li>
+        <li><strong>Cena:</strong> 5 250 000 Kč</li>
+      </ul>
+      <a href="https://sreality.cz/detail/prodej/byt/3+1/hradec-kralove" target="_blank" class="detail-link">Více informací &rarr;</a>
+    </div>
+    <div class="property-item">
+      <img src="images/dum1.jpg" alt="Rodinný dům v Opočně">
+      <h3>Rodinný dům v Opočně</h3>
+      <ul>
+        <li><strong>Lokalita:</strong> Opočno</li>
+        <li><strong>Velikost:</strong> 5+kk, 180 m²</li>
+        <li><strong>Cena:</strong> 8 800 000 Kč</li>
+      </ul>
+      <a href="https://sreality.cz/detail/prodej/dum/rodinny/opocno" target="_blank" class="detail-link">Více informací &rarr;</a>
+    </div>
+    <!-- Další nemovitosti můžeš přidat obdobně -->
+  </div>
+</section>
+
+<section id="awards">
+  <h2>Ocenění a certifikáty</h2>
+  <ul class="awards-list">
+    <li>
+      <img src="images/award1.png" alt="Poradce roku 2023" />
+      <span>Ocenění „Poradce roku 2023“ – Swiss Life Select</span>
+    </li>
+    <li>
+      <img src="images/certificate1.png" alt="Certifikát EFA" />
+      <span>Certifikace European Financial Advisor (EFA)</span>
+    </li>
+    <li>
+      <img src="images/certificate2.png" alt="Licence ČNB" />
+      <span>Registrace u ČNB – licence pro investiční a úvěrové poradenství</span>
+    </li>
+  </ul>
+</section>
+
 <section>
   <h2>Kontakt</h2>
   <form name="kontakt" method="POST" netlify netlify-honeypot="bot-field" class="contact-form">
@@ -216,6 +396,5 @@
 <footer>
   <p>&copy; 2025 Marek Zbořil. Všechna práva vyhrazena.</p>
 </footer>
-
 </body>
 </html>
