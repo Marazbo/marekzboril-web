@@ -20,22 +20,23 @@
     }
 
     header h1 {
-      font-size: 40px;
+      font-size: 48px;
       margin-bottom: 10px;
+      color: #f4f4f4;
     }
 
     header p {
-      font-size: 20px;
+      font-size: 24px;
       margin-bottom: 20px;
-      color: #ccc;
+      color: #e0e0e0;
     }
 
     header small {
-      max-width: 700px;
+      max-width: 800px;
       display: block;
       margin: 0 auto;
-      color: #888;
-      font-size: 15px;
+      color: #ccc;
+      font-size: 18px;
     }
 
     section {
@@ -46,7 +47,7 @@
 
     h2 {
       text-align: center;
-      font-size: 30px;
+      font-size: 32px;
       margin-bottom: 40px;
     }
 
@@ -76,12 +77,12 @@
     }
 
     .sluzba h3 {
-      font-size: 20px;
+      font-size: 22px;
       margin-bottom: 10px;
     }
 
     .sluzba p {
-      font-size: 15px;
+      font-size: 16px;
       color: #ccc;
     }
 
@@ -119,7 +120,7 @@
       }
 
       header h1 {
-        font-size: 32px;
+        font-size: 36px;
       }
     }
   </style>
@@ -136,27 +137,27 @@
   <h2>Služby</h2>
   <div class="sluzby">
     <div class="sluzba">
-      <img src="uver.jpg" alt="Úvěry">
+      <img src="/images/uver.jpg" alt="Úvěry">
       <h3>Úvěry</h3>
       <p>Společně nastavíme úvěr tak, aby dával dlouhodobý smysl. Plánujeme dopředu a bereme v úvahu vývoj sazeb, rodinné plány i rezervy.</p>
     </div>
     <div class="sluzba">
-      <img src="investice.jpg" alt="Investice">
+      <img src="/images/investice.jpg" alt="Investice">
       <h3>Investice</h3>
       <p>Bezpečně a rozumně. Pomohu vám s výběrem investic, které dávají smysl vaší situaci – ať už jde o pravidelné investování nebo zhodnocení větší částky.</p>
     </div>
     <div class="sluzba">
-      <img src="pojisteni.jpg" alt="Pojištění">
+      <img src="/images/pojisteni.jpg" alt="Pojištění">
       <h3>Pojištění</h3>
       <p>Pojištění není jen o splnění povinnosti. Pomohu nastavit ochranu, která má smysl a funguje v praxi, když je potřeba.</p>
     </div>
     <div class="sluzba">
-      <img src="konzultace.jpg" alt="Konzultace">
+      <img src="/images/konzultace.jpg" alt="Konzultace">
       <h3>Konzultace <br><small style="color: #ffb400;">ZDARMA</small></h3>
       <p>Nezávazně probereme vaše smlouvy, pojistné události, plánované hypotéky nebo investice. Pomohu vám zorientovat se a rozhodnout.</p>
     </div>
     <div class="sluzba">
-      <img src="reality.jpg" alt="Reality">
+      <img src="/images/reality.jpg" alt="Reality">
       <h3>Reality</h3>
       <p>Pomohu vám s prodejem nemovitosti – od kvalitní prezentace až po vyjednání maximální ceny. Vše bezpečně a profesionálně.</p>
     </div>
@@ -165,7 +166,7 @@
 
 <section id="kontakt">
   <h2>Kontaktujte mě</h2>
-  <form name="kontakt" method="POST" data-netlify="true">
+  <form name="kontakt" method="POST" data-netlify="true" netlify-honeypot="bot-field">
     <input type="hidden" name="form-name" value="kontakt">
     <input type="text" name="jmeno" placeholder="Vaše jméno" required>
     <input type="email" name="email" placeholder="Váš e-mail" required>
