@@ -1,48 +1,53 @@
 <!DOCTYPE html>
 <html lang="cs">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Marek Zbořil | Finanční a realitní poradenství</title>
   <style>
     body {
       margin: 0;
-      font-family: Arial, sans-serif;
+      font-family: 'Segoe UI', sans-serif;
       background-color: #111;
-      color: #fff;
+      color: #f4f4f4;
+      line-height: 1.6;
     }
 
     header {
       background-color: #000;
-      padding: 40px 20px;
+      padding: 60px 20px 30px;
       text-align: center;
     }
 
     header h1 {
-      font-size: 36px;
-      margin: 0;
+      font-size: 40px;
+      margin-bottom: 10px;
     }
 
     header p {
-      font-size: 18px;
-      margin-top: 10px;
+      font-size: 20px;
+      margin-bottom: 20px;
       color: #ccc;
     }
 
     header small {
+      max-width: 700px;
       display: block;
-      margin-top: 20px;
-      font-size: 14px;
-      color: #777;
+      margin: 0 auto;
+      color: #888;
+      font-size: 15px;
     }
 
     section {
-      padding: 40px 20px;
+      padding: 50px 20px;
+      max-width: 1200px;
+      margin: 0 auto;
     }
 
     h2 {
       text-align: center;
-      margin-bottom: 30px;
+      font-size: 30px;
+      margin-bottom: 40px;
     }
 
     .sluzby {
@@ -50,24 +55,34 @@
       flex-wrap: wrap;
       justify-content: center;
       gap: 30px;
-      max-width: 1000px;
-      margin: 0 auto;
     }
 
     .sluzba {
-      flex: 1 1 250px;
+      flex: 1 1 260px;
       max-width: 300px;
-      background-color: #222;
+      background-color: #1a1a1a;
       padding: 20px;
-      border-radius: 10px;
+      border-radius: 12px;
       text-align: center;
+      box-shadow: 0 0 10px rgba(0,0,0,0.3);
     }
 
     .sluzba img {
       max-width: 100%;
-      height: auto;
+      height: 180px;
+      object-fit: cover;
       border-radius: 6px;
       margin-bottom: 15px;
+    }
+
+    .sluzba h3 {
+      font-size: 20px;
+      margin-bottom: 10px;
+    }
+
+    .sluzba p {
+      font-size: 15px;
+      color: #ccc;
     }
 
     form {
@@ -78,22 +93,33 @@
       margin: 0 auto;
     }
 
-    input, textarea, button {
-      padding: 10px;
+    form input, form textarea {
+      padding: 12px;
       font-size: 16px;
+      background-color: #222;
+      border: 1px solid #444;
+      color: #f4f4f4;
+      border-radius: 6px;
     }
 
-    button {
+    form button {
       background-color: #ffb400;
-      border: none;
-      cursor: pointer;
       color: #000;
+      padding: 12px;
+      border: none;
+      font-size: 16px;
+      border-radius: 6px;
+      cursor: pointer;
     }
 
     @media screen and (max-width: 768px) {
       .sluzby {
         flex-direction: column;
         align-items: center;
+      }
+
+      header h1 {
+        font-size: 32px;
       }
     }
   </style>
@@ -103,9 +129,7 @@
 <header>
   <h1>Marek Zbořil</h1>
   <p>Finanční & Realitní poradenství | Manažer | Swiss Life Select</p>
-  <small>Každý klient je jiný. Má své plány, potřeby a představy. Mým prvním cílem je pochopit vaši situaci. 
-  Společně ji probereme a na základě toho najdu to nejlepší možné řešení – ať už jde o úvěr, investice, pojištění, 
-  nebo realitní poradenství. Nehledám šablonová řešení, ale přidanou hodnotu na míru právě vám.</small>
+  <small>Každý klient je jiný. Má své plány, potřeby a představy. Mým prvním cílem je pochopit vaši situaci. Společně ji probereme a na základě toho najdu to nejlepší možné řešení – ať už jde o úvěr, investice, pojištění, nebo realitní poradenství. Nehledám šablonová řešení, ale přidanou hodnotu na míru právě vám.</small>
 </header>
 
 <section>
@@ -128,7 +152,7 @@
     </div>
     <div class="sluzba">
       <img src="konzultace.jpg" alt="Konzultace">
-      <h3>Konzultace <br> <small style="color: #ffb400;">ZDARMA</small></h3>
+      <h3>Konzultace <br><small style="color: #ffb400;">ZDARMA</small></h3>
       <p>Nezávazně probereme vaše smlouvy, pojistné události, plánované hypotéky nebo investice. Pomohu vám zorientovat se a rozhodnout.</p>
     </div>
     <div class="sluzba">
@@ -141,7 +165,6 @@
 
 <section id="kontakt">
   <h2>Kontaktujte mě</h2>
-
   <form name="kontakt" method="POST" data-netlify="true">
     <input type="hidden" name="form-name" value="kontakt">
     <input type="text" name="jmeno" placeholder="Vaše jméno" required>
