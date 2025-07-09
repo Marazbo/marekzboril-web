@@ -1,126 +1,129 @@
 <!DOCTYPE html>
 <html lang="cs">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Marek Zbořil | Finanční a realitní poradenství</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Marek Zbořil – Finanční konzultant a realitní makléř</title>
   <style>
+    * {
+      box-sizing: border-box;
+    }
+
     body {
       margin: 0;
-      font-family: 'Segoe UI', sans-serif;
+      font-family: Arial, sans-serif;
       background-color: #111;
       color: #f4f4f4;
       line-height: 1.6;
     }
 
     header {
-      background-color: #000;
-      padding: 60px 20px 30px;
+      background-color: #333;
+      padding: 1rem;
       text-align: center;
     }
 
     header h1 {
-      font-size: 48px;
-      margin-bottom: 10px;
-      color: #f4f4f4;
+      font-size: 2.5rem;
+      color: #fff;
+      margin: 0.5rem 0;
     }
 
     header p {
-      font-size: 24px;
-      margin-bottom: 20px;
-      color: #e0e0e0;
-    }
-
-    header small {
-      max-width: 800px;
-      display: block;
-      margin: 0 auto;
-      color: #ccc;
-      font-size: 18px;
+      font-size: 1.2rem;
+      color: #ddd;
     }
 
     section {
-      padding: 50px 20px;
-      max-width: 1200px;
-      margin: 0 auto;
+      padding: 2rem 1rem;
+      max-width: 960px;
+      margin: auto;
     }
 
     h2 {
-      text-align: center;
-      font-size: 32px;
-      margin-bottom: 40px;
+      font-size: 2rem;
+      margin-bottom: 1rem;
+      color: #fff;
     }
 
-    .sluzby {
+    .services {
       display: flex;
       flex-wrap: wrap;
-      justify-content: center;
-      gap: 30px;
+      justify-content: space-between;
     }
 
-    .sluzba {
-      flex: 1 1 260px;
-      max-width: 300px;
-      background-color: #1a1a1a;
-      padding: 20px;
-      border-radius: 12px;
-      text-align: center;
-      box-shadow: 0 0 10px rgba(0,0,0,0.3);
+    .service {
+      flex: 0 0 48%;
+      background: #222;
+      padding: 1rem;
+      margin-bottom: 1rem;
+      border-radius: 5px;
     }
 
-    .sluzba img {
+    .service img {
       max-width: 100%;
-      height: 180px;
-      object-fit: cover;
-      border-radius: 6px;
-      margin-bottom: 15px;
+      height: auto;
+      border-radius: 3px;
     }
 
-    .sluzba h3 {
-      font-size: 22px;
-      margin-bottom: 10px;
-    }
-
-    .sluzba p {
-      font-size: 16px;
-      color: #ccc;
-    }
-
-    form {
-      display: flex;
-      flex-direction: column;
-      gap: 15px;
-      max-width: 600px;
-      margin: 0 auto;
-    }
-
-    form input, form textarea {
-      padding: 12px;
-      font-size: 16px;
-      background-color: #222;
-      border: 1px solid #444;
+    .service h3 {
+      margin-top: 0.5rem;
       color: #f4f4f4;
-      border-radius: 6px;
     }
 
-    form button {
-      background-color: #ffb400;
-      color: #000;
-      padding: 12px;
+    .contact-form {
+      background: #222;
+      padding: 2rem;
+      border-radius: 5px;
+    }
+
+    .contact-form label {
+      display: block;
+      margin: 1rem 0 0.5rem;
+    }
+
+    .contact-form input,
+    .contact-form textarea {
+      width: 100%;
+      padding: 0.5rem;
+      background-color: #333;
+      border: 1px solid #555;
+      color: #fff;
+      border-radius: 3px;
+    }
+
+    .contact-form button {
+      margin-top: 1rem;
+      padding: 0.7rem 1.5rem;
+      background-color: #5cb85c;
       border: none;
-      font-size: 16px;
-      border-radius: 6px;
+      color: white;
       cursor: pointer;
+      border-radius: 3px;
     }
 
-    @media screen and (max-width: 768px) {
-      .sluzby {
-        flex-direction: column;
-        align-items: center;
+    footer {
+      text-align: center;
+      padding: 2rem;
+      font-size: 0.9rem;
+      color: #aaa;
+    }
+
+    @media (max-width: 768px) {
+      .service {
+        flex: 0 0 100%;
       }
 
       header h1 {
-        font-size: 36px;
+        font-size: 2rem;
+      }
+
+      header p {
+        font-size: 1rem;
+      }
+
+      h2 {
+        font-size: 1.5rem;
       }
     }
   </style>
@@ -129,52 +132,66 @@
 
 <header>
   <h1>Marek Zbořil</h1>
-  <p>Finanční & Realitní poradenství | Manažer | Swiss Life Select</p>
-  <small>Každý klient je jiný. Má své plány, potřeby a představy. Mým prvním cílem je pochopit vaši situaci. Společně ji probereme a na základě toho najdu to nejlepší možné řešení – ať už jde o úvěr, investice, pojištění, nebo realitní poradenství. Nehledám šablonová řešení, ale přidanou hodnotu na míru právě vám.</small>
+  <p>Finanční konzultant & realitní makléř</p>
 </header>
 
 <section>
   <h2>Služby</h2>
-  <div class="sluzby">
-    <div class="sluzba">
-      <img src="/images/uver.jpg" alt="Úvěry">
-      <h3>Úvěry</h3>
-      <p>Společně nastavíme úvěr tak, aby dával dlouhodobý smysl. Plánujeme dopředu a bereme v úvahu vývoj sazeb, rodinné plány i rezervy.</p>
+  <div class="services">
+    <div class="service">
+      <img src="img/prodej.jpg" alt="Prodej a pronájem">
+      <h3>Prodej a pronájem nemovitostí</h3>
+      <p>Komplexní servis při prodeji či pronájmu nemovitostí.</p>
     </div>
-    <div class="sluzba">
-      <img src="/images/investice.jpg" alt="Investice">
-      <h3>Investice</h3>
-      <p>Bezpečně a rozumně. Pomohu vám s výběrem investic, které dávají smysl vaší situaci – ať už jde o pravidelné investování nebo zhodnocení větší částky.</p>
+    <div class="service">
+      <img src="img/odhad.jpg" alt="Tržní odhady">
+      <h3>Tržní odhady</h3>
+      <p>Odborné stanovení reálné tržní ceny nemovitosti.</p>
     </div>
-    <div class="sluzba">
-      <img src="/images/pojisteni.jpg" alt="Pojištění">
-      <h3>Pojištění</h3>
-      <p>Pojištění není jen o splnění povinnosti. Pomohu nastavit ochranu, která má smysl a funguje v praxi, když je potřeba.</p>
+    <div class="service">
+      <img src="img/prezentace.jpg" alt="Prezentace">
+      <h3>Prezentace nemovitostí</h3>
+      <p>Profesionální fotografie, inzerce a propagace.</p>
     </div>
-    <div class="sluzba">
-      <img src="/images/konzultace.jpg" alt="Konzultace">
-      <h3>Konzultace <br><small style="color: #ffb400;">ZDARMA</small></h3>
-      <p>Nezávazně probereme vaše smlouvy, pojistné události, plánované hypotéky nebo investice. Pomohu vám zorientovat se a rozhodnout.</p>
+    <div class="service">
+      <img src="img/finance.jpg" alt="Finanční poradenství">
+      <h3>Finanční poradenství</h3>
+      <p>Pomoc s hypotékami, investicemi a zajištěním budoucnosti.</p>
     </div>
-    <div class="sluzba">
-      <img src="/images/reality.jpg" alt="Reality">
-      <h3>Reality</h3>
-      <p>Pomohu vám s prodejem nemovitosti – od kvalitní prezentace až po vyjednání maximální ceny. Vše bezpečně a profesionálně.</p>
+    <div class="service">
+      <img src="img/koupe.jpg" alt="Koupě nemovitostí">
+      <h3>Koupě nemovitostí</h3>
+      <p>Bezpečný a efektivní nákup nemovitostí s odborným vedením.</p>
     </div>
   </div>
 </section>
 
-<section id="kontakt">
-  <h2>Kontaktujte mě</h2>
-  <form name="kontakt" method="POST" data-netlify="true" netlify-honeypot="bot-field">
-    <input type="hidden" name="form-name" value="kontakt">
-    <input type="text" name="jmeno" placeholder="Vaše jméno" required>
-    <input type="tel" name="telefon" placeholder="Telefonní číslo" required>
-    <input type="email" name="email" placeholder="Váš e-mail" required>
-    <textarea name="zprava" placeholder="Vaše zpráva" required rows="5"></textarea>
-    <button type="submit">Odeslat zprávu</button>
+<section>
+  <h2>Kontakt</h2>
+  <form name="kontakt" method="POST" netlify netlify-honeypot="bot-field" class="contact-form">
+    <input type="hidden" name="form-name" value="kontakt" />
+    <p hidden>
+      <label>Nechejte prázdné: <input name="bot-field" /></label>
+    </p>
+    <label for="jmeno">Jméno</label>
+    <input type="text" id="jmeno" name="jmeno" required />
+
+    <label for="email">E-mail</label>
+    <input type="email" id="email" name="email" required />
+
+    <label for="telefon">Telefonní číslo</label>
+    <input type="tel" id="telefon" name="telefon" required />
+
+    <label for="zprava">Zpráva</label>
+    <textarea id="zprava" name="zprava" rows="5" required></textarea>
+
+    <button type="submit">Odeslat</button>
   </form>
 </section>
+
+<footer>
+  <p>&copy; 2025 Marek Zbořil. Všechna práva vyhrazena.</p>
+</footer>
 
 </body>
 </html>
