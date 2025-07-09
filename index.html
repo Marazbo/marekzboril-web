@@ -19,18 +19,18 @@
 
     header {
       background-color: #333;
-      padding: 1rem;
+      padding: 2rem 1rem;
       text-align: center;
     }
 
     header h1 {
-      font-size: 2.5rem;
+      font-size: 3rem;
       color: #fff;
       margin: 0.5rem 0;
     }
 
     header p {
-      font-size: 1.2rem;
+      font-size: 1.4rem;
       color: #ddd;
     }
 
@@ -49,38 +49,33 @@
     .services {
       display: flex;
       flex-wrap: wrap;
+      gap: 1.5rem;
       justify-content: space-between;
-      gap: 1rem;
     }
 
     .service {
+      flex: 0 0 30%;
       background: #222;
       padding: 1rem;
       border-radius: 10px;
-      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.4);
-      flex-grow: 1;
-      color: #f4f4f4;
-    }
-
-    .service:nth-child(-n+3) {
-      flex-basis: 32%;
-    }
-
-    .service:nth-child(n+4) {
-      flex-basis: 48%;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
     }
 
     .service img {
       max-width: 100%;
       height: auto;
       border-radius: 5px;
-      margin-bottom: 0.5rem;
+    }
+
+    .service h3 {
+      margin-top: 0.5rem;
+      color: #f4f4f4;
     }
 
     .contact-form {
       background: #222;
       padding: 2rem;
-      border-radius: 5px;
+      border-radius: 10px;
     }
 
     .contact-form label {
@@ -95,7 +90,7 @@
       background-color: #333;
       border: 1px solid #555;
       color: #fff;
-      border-radius: 3px;
+      border-radius: 5px;
     }
 
     .contact-form button {
@@ -105,7 +100,7 @@
       border: none;
       color: white;
       cursor: pointer;
-      border-radius: 3px;
+      border-radius: 5px;
     }
 
     footer {
@@ -117,7 +112,7 @@
 
     @media (max-width: 768px) {
       .service {
-        flex-basis: 100% !important;
+        flex: 0 0 100%;
       }
 
       header h1 {
