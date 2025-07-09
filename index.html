@@ -54,13 +54,14 @@
       font-size: 2rem;
       margin-bottom: 1rem;
       color: #fff;
+      text-align: center;
     }
 
     .services {
       display: flex;
       flex-wrap: wrap;
       gap: 1.5rem;
-      justify-content: space-between;
+      justify-content: center;
     }
 
     .service {
@@ -175,4 +176,42 @@
     <div class="service">
       <img src="images/reality.jpg" alt="Realitní služby">
       <h3>Realitní služby</h3>
-      <p>Kvalitní prezentace nemovitosti je základ úspěchu. Zajistím profesionální fotografi
+      <p>Kvalitní prezentace nemovitosti je základ úspěchu. Zajistím profesionální fotografie, popis i cílenou propagaci, která přivede vážné zájemce. Mým cílem je pro vás vždy vyjednat nejlepší možnou cenu a bezpečný průběh celého obchodu.</p>
+    </div>
+    <div class="service">
+      <img src="images/konzultace.jpg" alt="Konzultace zdarma">
+      <h3>Konzultace zdarma</h3>
+      <p>Máte otázky ohledně pojistné události, nastavení stávající smlouvy, koupě nebo prodeje nemovitosti? Konzultace nabízím zdarma. Vysvětlím, doporučím a pomohu vám zorientovat se v situaci. Bez závazků, ale s maximální snahou pomoct.</p>
+    </div>
+  </div>
+</section>
+
+<section>
+  <h2>Kontakt</h2>
+  <form name="kontakt" method="POST" netlify netlify-honeypot="bot-field" class="contact-form">
+    <input type="hidden" name="form-name" value="kontakt" />
+    <p hidden>
+      <label>Nechejte prázdné: <input name="bot-field" /></label>
+    </p>
+    <label for="jmeno">Jméno</label>
+    <input type="text" id="jmeno" name="jmeno" required />
+
+    <label for="email">E-mail</label>
+    <input type="email" id="email" name="email" required />
+
+    <label for="telefon">Telefonní číslo</label>
+    <input type="tel" id="telefon" name="telefon" required />
+
+    <label for="zprava">Zpráva</label>
+    <textarea id="zprava" name="zprava" rows="5" required></textarea>
+
+    <button type="submit">Odeslat</button>
+  </form>
+</section>
+
+<footer>
+  <p>&copy; 2025 Marek Zbořil. Všechna práva vyhrazena.</p>
+</footer>
+
+</body>
+</html>
