@@ -133,14 +133,25 @@
       .benefit-item { max-width: 90vw; }
     }
 
-    /* Nemovitosti */
+    /* Nemovitosti - rozložení 2+1 */
     #properties {
       padding: 2em 1em 2em 1em;
     }
     .property-list {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      display: flex;
+      flex-wrap: wrap;
       gap: 2rem;
+      justify-content: center;
+      margin-bottom: 0;
+    }
+    .property-list-single {
+      margin-top: 2rem;
+      justify-content: center;
+      display: flex;
+    }
+    .property-list-single .property-item {
+      max-width: 430px;
+      width: 100%;
     }
     .property-item {
       border: 1px solid #284f63;
@@ -150,6 +161,7 @@
       box-shadow: 0 2px 8px rgba(70,166,228,0.08);
       transition: transform 0.17s, box-shadow 0.17s;
       text-align: center;
+      width: 350px;
     }
     .property-item img {
       width: 100%;
@@ -162,13 +174,7 @@
       margin-left: auto;
       margin-right: auto;
     }
-    /* Zvětšíme třetí inzerát a vycentrujeme */
-    .property-item:nth-child(3) {
-      grid-column: 1 / -1;
-      max-width: 430px;
-      margin-left: auto;
-      margin-right: auto;
-    }
+
     .property-item h3 {
       margin: 0.5em 0 0.7em 0;
     }
@@ -229,6 +235,10 @@
       color: #aaa;
     }
 
+    @media (max-width: 900px) {
+      .property-list, .property-list-single { flex-direction: column; align-items: center; }
+      .property-item { width: 100%; max-width: 430px; }
+    }
     @media (max-width: 768px) {
       .service,
       .service:nth-child(n+4) { width: 100%!important; min-width: unset;}
@@ -304,11 +314,11 @@
 
 <section id="properties">
   <h2>Aktuální nabídka nemovitostí</h2>
+  <!-- Dvě nemovitosti vedle sebe -->
   <div class="property-list">
-
     <!-- Byt 3+1, Hradec Králové -->
     <div class="property-item">
-      <img src="images/byt1.jpg" alt="Prodej bytu 3+1, 67 m², třída SNP, Hradec Králové" style="width:100%;max-width:400px;aspect-ratio:4/3;object-fit:cover;display:block;margin:auto;border-radius:7px;margin-bottom:1em;">
+      <img src="images/byt1.jpg" alt="Prodej bytu 3+1, 67 m², třída SNP, Hradec Králové">
       <h3>Prodej bytu 3+1, 67 m², třída SNP, Hradec Králové</h3>
       <ul>
         <li><strong>Dispozice:</strong> 3+1, 67 m²</li>
@@ -316,10 +326,9 @@
       </ul>
       <a href="https://swisslife-reality.cz/reality/prodej-bytu-3-1-67-m2-trida-snp,-hradec-kralove-24228" target="_blank" class="detail-link">Více informací &rarr;</a>
     </div>
-
     <!-- Dům 4+kk, Teplice nad Metují -->
     <div class="property-item">
-      <img src="images/dum1.jpg" alt="Prodej rodinného domu 160 m², Teplice nad Metují" style="width:100%;max-width:400px;aspect-ratio:4/3;object-fit:cover;display:block;margin:auto;border-radius:7px;margin-bottom:1em;">
+      <img src="images/dum1.jpg" alt="Prodej rodinného domu 160 m², Teplice nad Metují">
       <h3>Prodej rodinného domu 160 m², Teplice nad Metují</h3>
       <ul>
         <li><strong>Dispozice:</strong> 4+kk, 160 m²</li>
@@ -327,10 +336,11 @@
       </ul>
       <a href="https://swisslife-reality.cz/reality/prodej-rodinneho-domu-160-m2,-teplice-nad-metuji-24133" target="_blank" class="detail-link">Více informací &rarr;</a>
     </div>
-
-    <!-- Komerční pozemek, Teplice nad Metují -->
-    <div class="property-item" style="grid-column: 1 / -1; max-width: 430px; margin-left: auto; margin-right: auto;">
-      <img src="images/pozemek1.jpg" alt="Prodej komerčního pozemku 5049 m², Teplice nad Metují" style="width:100%;max-width:400px;aspect-ratio:4/3;object-fit:cover;display:block;margin:auto;border-radius:7px;margin-bottom:1em;">
+  </div>
+  <!-- Třetí nemovitost vycentrovaně -->
+  <div class="property-list property-list-single">
+    <div class="property-item">
+      <img src="images/pozemek1.jpg" alt="Prodej komerčního pozemku 5049 m², Teplice nad Metují">
       <h3>Prodej komerčního pozemku 5049 m², Teplice nad Metují</h3>
       <ul>
         <li><strong>Plocha:</strong> 5049 m²</li>
@@ -338,7 +348,6 @@
       </ul>
       <a href="https://swisslife-reality.cz/reality/prodej-komercniho-pozemku-5049-m2,-teplice-nad-met-24143" target="_blank" class="detail-link">Více informací &rarr;</a>
     </div>
-
   </div>
 </section>
 
@@ -366,7 +375,6 @@
 </section>
 
 <footer>
-  <p>&copy; 2025 Marek Zbořil. Všechna práva vyhrazena.</p>
 </footer>
 </body>
 </html>
