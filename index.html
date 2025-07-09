@@ -37,8 +37,8 @@
 
     .intro {
       max-width: 800px;
-      margin: 0 auto;
-      padding: 1rem 1.5rem 2rem;
+      margin: 0 auto 2rem;
+      padding: 0 1.5rem;
       font-size: 1.1rem;
       text-align: center;
       color: #ddd;
@@ -65,11 +65,15 @@
     }
 
     .service {
-      flex: 0 0 30%;
+      width: 30%;
       background: #222;
       padding: 1rem;
       border-radius: 10px;
       box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+    }
+
+    .service:nth-child(n+4) {
+      width: 40%;
     }
 
     .service img {
@@ -123,7 +127,7 @@
 
     @media (max-width: 768px) {
       .service {
-        flex: 0 0 100%;
+        width: 100% !important;
       }
 
       header h1 {
