@@ -389,4 +389,84 @@
   <div class="property-list">
     <!-- Byt 3+1, Hradec Králové -->
     <div class="property-item">
-     
+      <img src="images/byt1.jpg" alt="Prodej bytu 3+1, 67 m², třída SNP, Hradec Králové">
+      <h3>Prodej bytu 3+1, 67 m², třída SNP, Hradec Králové</h3>
+      <ul>
+        <li><strong>Dispozice:</strong> 3+1, 67 m²</li>
+        <li><strong>Cena:</strong> 5 500 000 Kč</li>
+      </ul>
+      <a href="https://swisslife-reality.cz/reality/prodej-bytu-3-1-67-m2-trida-snp,-hradec-kralove-24228" target="_blank" class="detail-link">Více informací &rarr;</a>
+    </div>
+    <!-- Dům 4+kk, Teplice nad Metují -->
+    <div class="property-item">
+      <img src="images/dum1.jpg" alt="Prodej rodinného domu 160 m², Teplice nad Metují">
+      <h3>Prodej rodinného domu 160 m², Teplice nad Metují</h3>
+      <ul>
+        <li><strong>Dispozice:</strong> 4+kk, 160 m²</li>
+        <li><strong>Cena:</strong> 2 990 000 Kč</li>
+      </ul>
+      <a href="https://swisslife-reality.cz/reality/prodej-rodinneho-domu-160-m2,-teplice-nad-metuji-24133" target="_blank" class="detail-link">Více informací &rarr;</a>
+    </div>
+  </div>
+  <!-- Třetí nemovitost vycentrovaně -->
+  <div class="property-list property-list-single">
+    <div class="property-item">
+      <img src="images/pozemek1.jpg" alt="Prodej komerčního pozemku 5049 m², Teplice nad Metují">
+      <h3>Prodej komerčního pozemku 5049 m², Teplice nad Metují</h3>
+      <ul>
+        <li><strong>Plocha:</strong> 5049 m²</li>
+        <li><strong>Cena:</strong> 200 Kč/m²</li>
+      </ul>
+      <a href="https://swisslife-reality.cz/reality/prodej-komercniho-pozemku-5049-m2,-teplice-nad-met-24143" target="_blank" class="detail-link">Více informací &rarr;</a>
+    </div>
+  </div>
+</section>
+
+<section>
+  <h2>Kontakt</h2>
+  
+  <div class="contact-info-box">
+    <div style="margin-bottom: 1em;">
+      <strong>Telefon:</strong>
+      <a href="tel:730667124">730 667 124</a>
+    </div>
+    <div style="margin-bottom: 1em;">
+      <strong>E-mail:</strong>
+      <a href="mailto:marek.zboril@sls.cz">marek.zboril@sls.cz</a>
+    </div>
+    <div>
+      <strong>Sídlo kanceláře:</strong>
+      <div>Kollárova 1257/7<br>500 02 Hradec Králové</div>
+    </div>
+  </div>
+
+  <!-- Nový nadpis před formulářem -->
+  <h3 style="text-align:center; margin-bottom:1.5rem; margin-top:0.5rem; font-size:1.5rem; color:#46a6e4;">
+    Ozvěte se mi
+  </h3>
+
+  <form name="kontakt" method="POST" netlify netlify-honeypot="bot-field" class="contact-form">
+    <input type="hidden" name="form-name" value="kontakt" />
+    <p hidden>
+      <label>Nechejte prázdné: <input name="bot-field" /></label>
+    </p>
+    <label for="jmeno">Jméno</label>
+    <input type="text" id="jmeno" name="jmeno" required />
+
+    <label for="email">E-mail</label>
+    <input type="email" id="email" name="email" required />
+
+    <label for="telefon">Telefonní číslo</label>
+    <input type="tel" id="telefon" name="telefon" required />
+
+    <label for="zprava">Zpráva</label>
+    <textarea id="zprava" name="zprava" rows="5" required></textarea>
+
+    <button type="submit">Odeslat</button>
+  </form>
+</section>
+
+<footer>
+</footer>
+</body>
+</html>
