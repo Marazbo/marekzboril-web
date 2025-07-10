@@ -45,6 +45,16 @@
       margin: 0.5rem 0 1rem;
     }
 
+    .divider {
+      padding: 0 0.4em;
+    }
+
+    @media (max-width: 600px) {
+      .divider {
+        display: none;
+      }
+    }
+
     .intro {
       max-width: 800px;
       margin: 3.5rem auto 2.5rem auto;
@@ -297,7 +307,10 @@
 
 <header>
   <h1>Marek Zbořil</h1>
-  <h2>Finanční & Realitní poradenství | Manažer | Swiss Life Select</h2>
+  <h2>
+    Finanční & Realitní poradenství
+    <span class="divider">|</span> Manažer | Swiss Life Select
+  </h2>
 </header>
 
 <div class="intro">
@@ -403,7 +416,6 @@
 
 <section>
   <h2>Kontakt</h2>
-  
   <div class="contact-info-box">
     <div style="margin-bottom: 1em;">
       <strong>Telefon:</strong>
