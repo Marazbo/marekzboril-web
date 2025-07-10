@@ -2,23 +2,47 @@
 <html lang="cs">
 <head>
   <meta charset="UTF-8" />
-  <title>Marek Zbořil – Realitní makléř a finanční konzultant v Hradci Králové</title>
-  <meta name="description" content="Marek Zbořil – profesionální realitní makléř a finanční poradce v Hradci Králové. Specializuji se na prodej nemovitostí, úvěry, pojištění i investice. Individuální přístup a komplexní služby.">
-  <meta name="keywords" content="Marek Zbořil, realitní makléř, finanční konzultant, finanční poradce, Hradec Králové, reality, pojištění, investice, úvěry, hypotéka, Swiss Life Select">
-  <meta name="author" content="Marek Zbořil">
-  <meta name="robots" content="index, follow">
-  <meta property="og:title" content="Marek Zbořil – Realitní makléř a finanční konzultant v Hradci Králové">
-  <meta property="og:description" content="Profesionální služby v oblasti realit, financí, pojištění a investic. Osobní přístup a maximální efektivita.">
-  <meta property="og:type" content="website">
-  <meta property="og:url" content="https://marekzboril.cz/">
-  <meta property="og:site_name" content="Marek Zbořil">
-  <meta property="og:locale" content="cs_CZ">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="canonical" href="https://marekzboril.cz/">
-  <link rel="icon" type="image/png" href="/favicon.png">
-  <style>
-    * { box-sizing: border-box; }
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Marek Zbořil – Finanční poradce a realitní makléř Hradec Králové</title>
+  <meta name="description" content="Pomáhám klientům v oblasti financí a realit. Osobní přístup, analytické myšlení, zkušenosti. Úvěry, investice, pojištění, prodej a pronájem nemovitostí – vše na jednom místě." />
+  <meta name="keywords" content="Marek Zbořil, finanční poradce, realitní makléř, Hradec Králové, úvěr, pojištění, investice, nemovitosti, Swiss Life Select" />
+  <meta name="robots" content="index, follow" />
+  <meta name="author" content="Marek Zbořil" />
+  <link rel="canonical" href="https://marekzboril.cz/" />
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="/images/favicon.png" />
+  <!-- Open Graph pro soc. sítě -->
+  <meta property="og:title" content="Marek Zbořil – Finanční a realitní poradenství" />
+  <meta property="og:description" content="Finanční poradce a realitní makléř – úvěry, investice, pojištění, reality. Hradec Králové a okolí." />
+  <meta property="og:url" content="https://marekzboril.cz/" />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="https://marekzboril.cz/images/og_image.jpg" />
 
+  <!-- Schema.org LocalBusiness -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "LocalBusiness",
+    "name": "Marek Zbořil",
+    "image": "https://marekzboril.cz/images/og_image.jpg",
+    "telephone": "+420730667124",
+    "email": "marek.zboril@sls.cz",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Kollárova 1257/7",
+      "addressLocality": "Hradec Králové",
+      "postalCode": "50002",
+      "addressCountry": "CZ"
+    },
+    "url": "https://marekzboril.cz/",
+    "description": "Finanční poradce a realitní makléř – úvěry, investice, pojištění, reality. Hradec Králové a okolí."
+  }
+  </script>
+
+  <style>
+    * {
+      box-sizing: border-box;
+    }
     body {
       margin: 0;
       font-family: Arial, sans-serif;
@@ -26,438 +50,432 @@
       color: #f4f4f4;
       line-height: 1.6;
     }
-
     header {
       background-color: #333;
-      padding: 3rem 1rem 2rem;
+      padding: 2.5rem 1rem 1rem;
       text-align: center;
     }
-
     header h1 {
-      font-size: 4rem;
+      font-size: 4.5rem;
       color: #fff;
       margin: 0.5rem 0;
+      letter-spacing: 0.02em;
     }
-
     header h2 {
       font-size: 1.8rem;
       color: #ccc;
       margin: 0.5rem 0 1rem;
+      font-weight: 400;
+      letter-spacing: 0.04em;
+    }
+    @media (max-width: 768px) {
+      header h1 { font-size: 2.2rem; }
+      header h2 { font-size: 1.1rem; }
     }
 
-    .divider {
-      padding: 0 0.4em;
-    }
-
-    @media (max-width: 600px) {
-      .divider {
-        display: none;
-      }
-    }
-
+    /* Úvod */
     .intro {
-      max-width: 800px;
-      margin: 3.5rem auto 2.5rem auto;
-      padding: 2.2rem 2.2rem 2rem 2.2rem;
-      font-size: 1.18rem;
+      max-width: 900px;
+      margin: 0 auto;
+      margin-top: 2.3rem;
+      margin-bottom: 1.6rem;
+      padding: 2.3rem 1.5rem 2rem;
+      font-size: 1.2rem;
       text-align: center;
-      color: #f9f9f9;
-      background: rgba(25, 28, 34, 0.80);
-      border-radius: 18px;
-      border: 1.2px solid #444;
-      box-shadow: 0 4px 28px 0 rgba(70,166,228,0.07), 0 2px 8px 0 rgba(10,20,40,0.08);
-      backdrop-filter: blur(1px);
-      letter-spacing: 0.01em;
+      color: #e6e6e6;
+      border-radius: 24px;
+      border: 2.5px solid #339edc;
+      background: linear-gradient(120deg, rgba(51,158,220,0.10) 0%, rgba(30,60,80,0.10) 100%);
+      box-shadow: 0 4px 16px rgba(50,120,200,0.06);
+    }
+    @media (max-width: 768px) {
+      .intro { margin-top: 1.2rem; font-size: 1.05rem; padding: 1.3rem 0.6rem; }
+    }
+
+    /* Proč si vybrat právě mě */
+    .why-me-section {
+      max-width: 900px;
+      margin: 2.5rem auto 1rem;
+      text-align: center;
+    }
+    .why-me-cards {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 2.5rem;
+      margin-top: 1.5rem;
+    }
+    .why-me-card {
+      flex: 0 0 260px;
+      background: #1c2228;
+      color: #f4f4f4;
+      border-radius: 16px;
+      box-shadow: 0 2px 12px rgba(50,120,200,0.08);
+      padding: 1.5rem 1rem 1.5rem 1.2rem;
+      font-size: 1.14rem;
+      border-left: 4px solid #339edc;
+      min-height: 105px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+    .why-me-card h3 {
+      margin: 0 0 0.5rem 0;
+      font-size: 1.25rem;
+      color: #46a6e4;
+      font-weight: 500;
+    }
+    @media (max-width: 900px) {
+      .why-me-cards { gap: 1.1rem; }
+      .why-me-card { flex: 1 1 250px; font-size: 1.03rem; }
+    }
+    @media (max-width: 700px) {
+      .why-me-cards { flex-direction: column; gap: 1rem; }
+      .why-me-card { max-width: 90vw; margin: 0 auto; }
     }
 
     section {
-      padding: 3rem 1rem 2.5rem 1rem;
-      max-width: 1100px;
-      margin: 0 auto 0 auto;
-      background: transparent;
+      padding: 2rem 1rem;
+      max-width: 960px;
+      margin: auto;
     }
-
     h2 {
-      font-size: 2.3rem;
-      margin-bottom: 2rem;
-      margin-top: 0;
+      font-size: 2rem;
+      margin-bottom: 1.1rem;
       color: #fff;
       text-align: center;
-      letter-spacing: 0.03em;
     }
 
-    /* SLUŽBY */
+    /* Služby */
     .services {
       display: flex;
       flex-wrap: wrap;
       gap: 1.5rem;
       justify-content: center;
-      margin-bottom: 2.5rem;
+      margin-bottom: 2.3rem;
     }
-
     .service {
-      width: 30%;
+      flex: 0 0 30%;
       background: #222;
-      padding: 1rem;
-      border-radius: 10px;
-      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+      padding: 1.2rem 1rem 1.3rem 1rem;
+      border-radius: 17px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.16);
       margin-bottom: 0;
-      min-width: 260px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      min-width: 230px;
+      max-width: 350px;
+      min-height: 365px;
+      transition: transform 0.15s;
     }
-
-    .service:nth-child(n+4) {
-      width: 40%;
-      min-width: 280px;
+    .service:hover {
+      transform: translateY(-5px) scale(1.025);
+      box-shadow: 0 6px 18px rgba(60,130,230,0.16);
     }
-
     .service img {
       max-width: 100%;
-      height: auto;
-      border-radius: 5px;
-    }
-
-    .service h3 {
-      margin-top: 0.5rem;
-      color: #f4f4f4;
-    }
-
-    /* USP sekce */
-    #benefits {
-      padding: 3rem 1em 2.5em 1em;
-      text-align: center;
-    }
-    .benefit-list {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 2rem;
-      justify-content: center;
-    }
-    .benefit-item {
-      flex: 1 1 230px;
-      max-width: 280px;
-      padding: 1.2em 0.7em;
-      background: #191c22;
+      width: 80px;
+      height: 80px;
+      object-fit: cover;
       border-radius: 10px;
-      box-shadow: 0 2px 10px rgba(70,166,228,0.08);
+      margin-bottom: 1.1rem;
+      box-shadow: 0 2px 8px rgba(51,158,220,0.08);
+      background: #181c21;
     }
-    .benefit-item h3 {
-      font-size: 1.17rem;
-      margin: 0.7em 0 0.3em 0;
+    .service h3 {
+      margin: 0.1rem 0 0.7rem 0;
+      color: #f4f4f4;
+      font-size: 1.16rem;
+      font-weight: 500;
+      letter-spacing: 0.01em;
     }
-    .benefit-item p {
-      font-size: 1rem;
-      color: #b5e2fd;
-      min-height: 3.6em;
-      display: flex;
-      align-items: center;
-      justify-content: center;
+    .service p {
+      color: #d2d7df;
+      font-size: 1.05rem;
       text-align: center;
-    }
-    .benefit-item span {
-      display: block;
-      font-size:2.3rem;
-      color:#46a6e4;
-      margin-bottom: 0.4em;
     }
     @media (max-width: 900px) {
-      .benefit-list { flex-direction: column; align-items: center; }
-      .benefit-item { max-width: 90vw; }
+      .service { flex: 1 1 45%; max-width: 98vw; }
+      .services { gap: 1rem; }
+    }
+    @media (max-width: 700px) {
+      .service { flex: 1 1 99vw; min-width: 0; max-width: 99vw; }
+      .services { flex-direction: column; }
     }
 
-    /* Nemovitosti - rozložení 2+1 */
-    #properties {
-      padding: 3rem 1em 2.5rem 1em;
+    /* Nabídka nemovitostí */
+    .property-section {
+      max-width: 980px;
+      margin: 0 auto;
+      padding-top: 0.5rem;
+      padding-bottom: 0.5rem;
     }
     .property-list {
       display: flex;
       flex-wrap: wrap;
-      gap: 2rem;
+      gap: 2.1rem;
       justify-content: center;
-      margin-bottom: 0;
-    }
-    .property-list-single {
-      margin-top: 2.5rem;
-      justify-content: center;
-      display: flex;
-    }
-    .property-list-single .property-item {
-      max-width: 430px;
-      width: 100%;
+      margin-bottom: 1.3rem;
     }
     .property-item {
-      border: 1px solid #284f63;
-      border-radius: 12px;
-      padding: 1.3em 1em;
-      background: #161b22;
-      box-shadow: 0 2px 8px rgba(70,166,228,0.08);
-      transition: transform 0.17s, box-shadow 0.17s;
-      text-align: center;
-      width: 350px;
+      background: #232730;
+      border-radius: 17px;
+      box-shadow: 0 2px 8px rgba(51,158,220,0.09);
+      max-width: 360px;
+      flex: 1 1 320px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 1.2rem 1.1rem;
+      margin-bottom: 0;
+      min-width: 240px;
     }
     .property-item img {
       width: 100%;
-      max-width: 400px;
-      aspect-ratio: 4/3;
+      max-width: 325px;
+      height: 180px;
       object-fit: cover;
-      border-radius: 7px;
-      margin-bottom: 1em;
-      display: block;
-      margin-left: auto;
-      margin-right: auto;
+      border-radius: 12px;
+      margin-bottom: 0.9rem;
+      box-shadow: 0 2px 8px rgba(51,158,220,0.10);
+      background: #222;
     }
-
     .property-item h3 {
-      margin: 0.5em 0 0.7em 0;
+      color: #46a6e4;
+      font-size: 1.13rem;
+      margin-bottom: 0.7rem;
+      margin-top: 0.3rem;
+      font-weight: 600;
+      text-align: center;
     }
     .property-item ul {
-      padding-left: 0;
-      margin: 0 0 0.7em 0;
-      color: #aee1f9;
-      font-size: 0.98rem;
+      color: #c6d4e2;
       list-style: none;
+      padding: 0;
+      font-size: 1.02rem;
+      margin-bottom: 0.7rem;
+      margin-top: 0.2rem;
+    }
+    .property-item li {
+      margin-bottom: 0.22rem;
+      text-align: left;
     }
     .detail-link {
-      display: inline-block;
-      color: #46a6e4;
-      font-weight: bold;
+      margin-top: 0.7rem;
+      color: #3499e2;
       text-decoration: none;
-      margin-top: 0.5em;
-      border-bottom: 1px solid #46a6e4;
-      transition: color 0.15s, border 0.15s;
+      font-weight: bold;
+      letter-spacing: 0.01em;
+      transition: color 0.13s;
     }
     .detail-link:hover {
-      color: #3090c7;
-      border-bottom: 2px solid #3090c7;
+      color: #85d0ff;
+      text-decoration: underline;
+    }
+    /* Pro 2+1 nemovitost */
+    .property-list-single {
+      justify-content: center;
+      display: flex;
+      margin-top: 0.4rem;
+      margin-bottom: 1.1rem;
     }
 
     /* Kontakt */
     .contact-info-box {
-      max-width: 400px; 
-      margin: 0 auto 2.5rem auto; 
-      background: #23272b; 
-      border-radius: 10px; 
-      padding: 1.5rem 2rem; 
-      box-shadow: 0 2px 10px rgba(70,166,228,0.06); 
-      text-align: left;
+      background: #181e24;
+      border-radius: 10px;
+      box-shadow: 0 2px 7px rgba(51,158,220,0.08);
+      padding: 1.1rem 1.2rem;
+      margin-bottom: 1.6rem;
+      max-width: 420px;
+      margin-left: auto;
+      margin-right: auto;
       font-size: 1.08rem;
+      color: #dbeaff;
+      text-align: left;
     }
     .contact-info-box a {
-      color: #79cfff; 
+      color: #339edc;
       text-decoration: none;
-      word-break: break-all;
+      font-weight: 500;
     }
-    .contact-info-box strong {
-      color: #fff;
+    .contact-info-box a:hover {
+      text-decoration: underline;
     }
+
+    /* Kontaktní formulář */
     .contact-form {
       background: #222;
-      padding: 2.5rem;
-      border-radius: 10px;
+      padding: 2rem 1.4rem 1.2rem 1.4rem;
+      border-radius: 13px;
+      max-width: 420px;
+      margin: 0 auto;
+      box-shadow: 0 2px 10px rgba(51,158,220,0.09);
+      margin-bottom: 2.1rem;
+      color: #dbeaff;
     }
     .contact-form label {
       display: block;
-      margin: 1rem 0 0.5rem;
+      margin: 1.1rem 0 0.4rem;
     }
     .contact-form input,
     .contact-form textarea {
       width: 100%;
-      padding: 0.5rem;
+      padding: 0.52rem;
       background-color: #333;
       border: 1px solid #555;
       color: #fff;
-      border-radius: 5px;
+      border-radius: 7px;
+      font-size: 1rem;
     }
     .contact-form button {
-      margin-top: 1rem;
-      padding: 0.7rem 1.5rem;
+      margin-top: 1.2rem;
+      padding: 0.75rem 1.6rem;
       background-color: #5cb85c;
       border: none;
       color: white;
       cursor: pointer;
-      border-radius: 5px;
+      border-radius: 7px;
+      font-size: 1.1rem;
+      font-weight: bold;
+      transition: background 0.2s;
+    }
+    .contact-form button:hover {
+      background-color: #4fa14f;
     }
 
     footer {
       text-align: center;
-      padding: 2rem;
-      font-size: 0.9rem;
+      padding: 1.2rem 0 0.7rem;
+      font-size: 0.95rem;
       color: #aaa;
-    }
-
-    @media (max-width: 900px) {
-      .property-list, .property-list-single { flex-direction: column; align-items: center; }
-      .property-item { width: 100%; max-width: 430px; }
-      .contact-info-box { padding: 1rem 1em; }
-    }
-    @media (max-width: 768px) {
-      .service,
-      .service:nth-child(n+4) { width: 100%!important; min-width: unset;}
-      header h1 { font-size: 2.5rem; }
-      header h2 { font-size: 1.3rem; }
-      .intro { font-size: 1rem; }
-      h2 { font-size: 1.5rem; }
-      section { padding: 2rem 1rem 1.5rem 1rem; }
-      #benefits { padding: 2rem 1rem 1.5rem 1rem;}
-      #properties { padding: 2rem 1rem 1.5rem 1rem;}
-      .contact-form { padding: 1.5rem; }
+      background: transparent;
+      margin-top: 2rem;
     }
   </style>
 </head>
 <body>
+  <header>
+    <h1>Marek Zbořil</h1>
+    <h2>
+      Finanční & Realitní poradenství
+      <span class="hide-on-mobile"> | </span>
+      <span class="only-mobile"><br></span>
+      Manažer | Swiss Life Select
+    </h2>
+  </header>
 
-<header>
-  <h1>Marek Zbořil</h1>
-  <h2>
-    Finanční & Realitní poradenství
-    <span class="divider">|</span> Manažer | Swiss Life Select
-  </h2>
-</header>
-
-<div class="intro">
-  <p>Každý klient je jiný. Má své plány, potřeby a představy. Mým prvním cílem je pochopit vaši situaci. Společně ji probereme a na základě toho najdu to nejlepší možné řešení, ať už jde o nastavení úvěru, smysluplné investice, pojištění, které dává smysl, nebo know-how v oblasti nemovitostí. Nejde mi o šablonové nabídky, ale o skutečnou pomoc na míru. Tak, aby to dávalo smysl právě vám a má práce pro vás měla opravdový přínos.</p>
-</div>
-
-<section>
-  <h2>Služby</h2>
-  <div class="services">
-    <div class="service">
-      <img src="images/pojisteni.jpg" alt="Pojištění">
-      <h3>Pojištění</h3>
-      <p>Pojistka má člověku pomoci, ne ho zatížit složitostmi. Společně projdeme, co má ve vašem životě smysl chránit. Vysvětlím možnosti, nastavíme smlouvy tak, aby dávaly hlavu a patu, a hlavně aby opravdu fungovaly, když bude potřeba.</p>
-    </div>
-    <div class="service">
-      <img src="images/uver.jpg" alt="Úvěry">
-      <h3>Úvěry</h3>
-      <p>Dobře nastavený úvěr začíná dlouho před podpisem smlouvy. Pomohu vám zorientovat se v možnostech, spočítat, co je udržitelné i z dlouhodobého hlediska, a naplánovat celý proces tak, aby pro vás úvěr pracoval a ne vás omezoval.</p>
-    </div>
-    <div class="service">
-      <img src="images/investice.jpg" alt="Investice">
-      <h3>Investice</h3>
-      <p>Investování může být srozumitelné, klidné a promyšlené. Vysvětlím vám vše lidsky, bez složitých termínů. Společně sestavíme plán, který odpovídá vašim cílům, časovým možnostem i vztahu k riziku.</p>
-    </div>
-    <div class="service">
-      <img src="images/reality.jpg" alt="Realitní služby">
-      <h3>Realitní služby</h3>
-      <p>Kvalitní prezentace nemovitosti je základ úspěchu. Zajistím profesionální fotografie, popis i cílenou propagaci, která přivede vážné zájemce. Mým cílem je pro vás vždy vyjednat nejlepší možnou cenu a bezpečný průběh celého obchodu.</p>
-    </div>
-    <div class="service">
-      <img src="images/konzultace.jpg" alt="Konzultace zdarma">
-      <h3>Konzultace zdarma</h3>
-      <p>Máte otázky ohledně pojistné události, nastavení stávající smlouvy, koupě nebo prodeje nemovitosti? Konzultace nabízím zdarma. Vysvětlím, doporučím a pomohu vám zorientovat se v situaci. Bez závazků, ale s maximální snahou pomoct.</p>
-    </div>
+  <div class="intro">
+    Každý klient je jiný. Má své plány, potřeby a představy. Mým prvním cílem je pochopit vaši situaci. Společně ji probereme a na základě toho najdu to nejlepší možné řešení, ať už jde o nastavení úvěru, smysluplné investice, pojištění, které dává smysl, nebo know-how v oblasti nemovitostí. Nejde mi o šablonové nabídky, ale o skutečnou pomoc na míru. Tak, aby to dávalo smysl právě vám a má práce pro vás měla opravdový přínos.
   </div>
-</section>
 
-<section id="benefits">
-  <h2>Proč si vybrat právě mě</h2>
-  <div class="benefit-list">
-    <div class="benefit-item">
-      <span>🧠</span>
-      <h3>Analytické schopnosti</h3>
-      <p>
+  <section class="why-me-section">
+    <h2>Proč si vybrat právě mě</h2>
+    <div class="why-me-cards">
+      <div class="why-me-card">
+        <h3>Komplexní služby</h3>
+        Zajistím vše od financí přes nemovitosti až po investice. Vyřeším za vás celý proces, nemusíte obíhat různé instituce – vše zvládneme společně.
+      </div>
+      <div class="why-me-card">
+        <h3>Individuální přístup</h3>
+        Každého klienta vnímám jako originál. Naslouchám a navrhuji řešení podle vašich potřeb, ne podle šablony. Vše přizpůsobím vaší konkrétní situaci.
+      </div>
+      <div class="why-me-card">
+        <h3>Analytické schopnosti</h3>
         Dokážu se rychle zorientovat i ve složitějších situacích a najít řešení, která jsou promyšlená a fungují v praxi. Moje analytické schopnosti dokazuje i členství v Mense ČR.
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <h2>Služby</h2>
+    <div class="services">
+      <div class="service">
+        <img src="images/pojisteni.jpg" alt="Pojištění" />
+        <h3>Pojištění</h3>
+        <p>Pojistka má člověku pomoci, ne ho zatížit složitostmi. Společně projdeme, co má ve vašem životě smysl chránit. Vysvětlím možnosti, nastavíme smlouvy tak, aby dávaly hlavu a patu, a hlavně aby opravdu fungovaly, když bude potřeba.</p>
+      </div>
+      <div class="service">
+        <img src="images/uver.jpg" alt="Úvěry" />
+        <h3>Úvěry</h3>
+        <p>Dobře nastavený úvěr začíná dlouho před podpisem smlouvy. Pomohu vám zorientovat se v možnostech, spočítat, co je udržitelné i z dlouhodobého hlediska, a naplánovat celý proces tak, aby pro vás úvěr pracoval a ne vás omezoval.</p>
+      </div>
+      <div class="service">
+        <img src="images/investice.jpg" alt="Investice" />
+        <h3>Investice</h3>
+        <p>Investování může být srozumitelné, klidné a promyšlené. Vysvětlím vám vše lidsky, bez složitých termínů. Společně sestavíme plán, který odpovídá vašim cílům, časovým možnostem i vztahu k riziku.</p>
+      </div>
+      <div class="service">
+        <img src="images/reality.jpg" alt="Realitní služby" />
+        <h3>Realitní služby</h3>
+        <p>Kvalitní prezentace nemovitosti je základ úspěchu. Zajistím profesionální fotografie, popis i cílenou propagaci, která přivede vážné zájemce. Mým cílem je pro vás vždy vyjednat nejlepší možnou cenu a bezpečný průběh celého obchodu.</p>
+      </div>
+      <div class="service">
+        <img src="images/konzultace.jpg" alt="Konzultace zdarma" />
+        <h3>Konzultace zdarma</h3>
+        <p>Máte otázky ohledně pojistné události, nastavení stávající smlouvy, koupě nebo prodeje nemovitosti? Konzultace nabízím zdarma. Vysvětlím, doporučím a pomohu vám zorientovat se v situaci. Bez závazků, ale s maximální snahou pomoct.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="property-section">
+    <h2>Aktuální nabídka nemovitostí</h2>
+    <div class="property-list">
+      <div class="property-item">
+        <img src="images/byt_hradec.jpg" alt="Byt 3+1 Hradec Králové">
+        <h3>Prodej bytu 3+1, 67 m², třída SNP, Hradec Králové</h3>
+        <ul>
+          <li><b>Cena:</b> 5 500 000 Kč</li>
+          <li><b>Dispozice:</b> 3+1, 67 m²</li>
+        </ul>
+        <a href="https://swisslife-reality.cz/reality/prodej-bytu-3-1-67-m2-trida-snp,-hradec-kralove-24228" target="_blank" class="detail-link">Zobrazit detail</a>
+      </div>
+      <div class="property-item">
+        <img src="images/dum_teplice.jpg" alt="Rodinný dům Teplice nad Metují">
+        <h3>Prodej rodinného domu, 160 m², Teplice nad Metují</h3>
+        <ul>
+          <li><b>Cena:</b> 3 999 000 Kč</li>
+          <li><b>Dispozice:</b> dům 160 m²</li>
+        </ul>
+        <a href="https://swisslife-reality.cz/reality/prodej-rodinneho-domu-160-m2,-teplice-nad-metuji-24133" target="_blank" class="detail-link">Zobrazit detail</a>
+      </div>
+    </div>
+    <div class="property-list-single">
+      <div class="property-item">
+        <img src="images/pozemek_teplice.jpg" alt="Pozemek Teplice nad Metují">
+        <h3>Prodej komerčního pozemku, 5049 m², Teplice nad Metují</h3>
+        <ul>
+          <li><b>Cena:</b> 200 Kč/m²</li>
+          <li><b>Dispozice:</b> pozemek 5049 m²</li>
+        </ul>
+        <a href="https://swisslife-reality.cz/reality/prodej-komercniho-pozemku-5049-m2,-teplice-nad-met-24143" target="_blank" class="detail-link">Zobrazit detail</a>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <h2>Ozvěte se mi</h2>
+    <div class="contact-info-box">
+      <div><b>Telefon:</b> <a href="tel:+420730667124">730 667 124</a></div>
+      <div><b>E-mail:</b> <a href="mailto:marek.zboril@sls.cz">marek.zboril@sls.cz</a></div>
+      <div><b>Kancelář:</b> Kollárova 1257/7, 500 02 Hradec Králové</div>
+    </div>
+    <form name="kontakt" method="POST" netlify netlify-honeypot="bot-field" class="contact-form">
+      <input type="hidden" name="form-name" value="kontakt" />
+      <p hidden>
+        <label>Nechejte prázdné: <input name="bot-field" /></label>
       </p>
-    </div>
-    <div class="benefit-item">
-      <span>💼</span>
-      <h3>Komplexní služby</h3>
-      <p>
-        Postarám se o vše od investic a pojištění až po reality a úvěry. Veškeré služby propojím tak, aby pro vás dávaly smysl a přinesly skutečný užitek.
-      </p>
-    </div>
-    <div class="benefit-item">
-      <span>🤝</span>
-      <h3>Individuální přístup</h3>
-      <p>
-        Vždy hledám řešení na míru vašim potřebám a cílům. S každým klientem jednám s respektem a navrhuji to nejlepší pro jeho situaci.
-      </p>
-    </div>
-  </div>
-</section>
-
-<section id="properties">
-  <h2>Aktuální nabídka nemovitostí</h2>
-  <!-- Dvě nemovitosti vedle sebe -->
-  <div class="property-list">
-    <!-- Byt 3+1, Hradec Králové -->
-    <div class="property-item">
-      <img src="images/byt1.jpg" alt="Prodej bytu 3+1, 67 m², třída SNP, Hradec Králové">
-      <h3>Prodej bytu 3+1, 67 m², třída SNP, Hradec Králové</h3>
-      <ul>
-        <li><strong>Dispozice:</strong> 3+1, 67 m²</li>
-        <li><strong>Cena:</strong> 5 500 000 Kč</li>
-      </ul>
-      <a href="https://swisslife-reality.cz/reality/prodej-bytu-3-1-67-m2-trida-snp,-hradec-kralove-24228" target="_blank" class="detail-link">Více informací &rarr;</a>
-    </div>
-    <!-- Dům 4+kk, Teplice nad Metují -->
-    <div class="property-item">
-      <img src="images/dum1.jpg" alt="Prodej rodinného domu 160 m², Teplice nad Metují">
-      <h3>Prodej rodinného domu 160 m², Teplice nad Metují</h3>
-      <ul>
-        <li><strong>Dispozice:</strong> 4+kk, 160 m²</li>
-        <li><strong>Cena:</strong> 2 990 000 Kč</li>
-      </ul>
-      <a href="https://swisslife-reality.cz/reality/prodej-rodinneho-domu-160-m2,-teplice-nad-metuji-24133" target="_blank" class="detail-link">Více informací &rarr;</a>
-    </div>
-  </div>
-  <!-- Třetí nemovitost vycentrovaně -->
-  <div class="property-list property-list-single">
-    <div class="property-item">
-      <img src="images/pozemek1.jpg" alt="Prodej komerčního pozemku 5049 m², Teplice nad Metují">
-      <h3>Prodej komerčního pozemku 5049 m², Teplice nad Metují</h3>
-      <ul>
-        <li><strong>Plocha:</strong> 5049 m²</li>
-        <li><strong>Cena:</strong> 200 Kč/m²</li>
-      </ul>
-      <a href="https://swisslife-reality.cz/reality/prodej-komercniho-pozemku-5049-m2,-teplice-nad-met-24143" target="_blank" class="detail-link">Více informací &rarr;</a>
-    </div>
-  </div>
-</section>
-
-<section>
-  <h2>Kontakt</h2>
-  <div class="contact-info-box">
-    <div style="margin-bottom: 1em;">
-      <strong>Telefon:</strong>
-      <a href="tel:730667124">730 667 124</a>
-    </div>
-    <div style="margin-bottom: 1em;">
-      <strong>E-mail:</strong>
-      <a href="mailto:marek.zboril@sls.cz">marek.zboril@sls.cz</a>
-    </div>
-    <div>
-      <strong>Sídlo kanceláře:</strong>
-      <div>Kollárova 1257/7<br>500 02 Hradec Králové</div>
-    </div>
-  </div>
-
-  <!-- Nový nadpis před formulářem -->
-  <h3 style="text-align:center; margin-bottom:1.5rem; margin-top:0.5rem; font-size:1.5rem; color:#46a6e4;">
-    Ozvěte se mi
-  </h3>
-
-  <form name="kontakt" method="POST" netlify netlify-honeypot="bot-field" class="contact-form">
-    <input type="hidden" name="form-name" value="kontakt" />
-    <p hidden>
-      <label>Nechejte prázdné: <input name="bot-field" /></label>
-    </p>
-    <label for="jmeno">Jméno</label>
-    <input type="text" id="jmeno" name="jmeno" required />
-
-    <label for="email">E-mail</label>
-    <input type="email" id="email" name="email" required />
-
-    <label for="telefon">Telefonní číslo</label>
-    <input type="tel" id="telefon" name="telefon" required />
-
-    <label for="zprava">Zpráva</label>
-    <textarea id="zprava" name="zprava" rows="5" required></textarea>
-
-    <button type="submit">Odeslat</button>
-  </form>
-</section>
-
-<footer>
-</footer>
+      <label for="jmeno">Jméno</label>
+      <input type="text" id="jmeno" name="jmeno" required />
+      <label for="email">E-mail</label>
+      <input type="email" id="email" name="email" required />
+      <label for="telefon">Telefonní číslo</label>
+      <input type="tel" id="telefon" name="telefon" required />
+      <label for="zprava">Zpráva</label>
+      <textarea id="zprava" name="zprava" rows="5" required></textarea>
+      <button type="submit">Odeslat</button>
+    </form>
+  </section>
 </body>
 </html>
